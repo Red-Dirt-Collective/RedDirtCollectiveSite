@@ -37,6 +37,7 @@ nav {
   width: 100%;
   background: #f5f4e1;
   border-bottom: 2px solid #d50004;
+  position:fixed;
 }
 
 nav a {
@@ -51,10 +52,49 @@ h1 {
 }
 
 
-
 .main-content {
   padding: 1rem;
   background-image:url("/static/DustBowl.a7a3491c.jpg");
   background-size:cover;
+  background-attachment: fixed;
   height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.content {padding-top:54px;}
+
+.main-content p {
+  width:33%;
+  margin-top:600px;
+}
+
+
+.info-scroll {
+  width:100%;
+  overflow:scroll;
+}
+
+.info-block {
+  background: #f5f4e1;
+  border-bottom: 2px solid #d50004;
+  width:33%;
+  height:500px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.more {
+  height:6px;
+  width:6px;
+  border: solid #f5f4e1;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+  -webkit-transform: translateY(-100%) rotate(45deg);
+  position:absolute;
+    top:96vh;
+    transform:translateY(-100%) rotate(45deg);
 }
