@@ -2,6 +2,8 @@
   scroll-behavior: smooth;
 }
 
+@import url("https://use.typekit.net/tei3yvm.css");
+/* 
 body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -9,6 +11,16 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+} */
+body{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: bigcity-grotesque-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background:#f5f4e1;
+  color: #d50004;
 }
 
 a {
@@ -23,15 +35,26 @@ img {
 
 nav {
   width: 100%;
-  background: #108db8;
+  background: #f5f4e1;
+  border-bottom: 2px solid #d50004;
 }
 
 nav a {
-  color: white;
+  color: #d50004;
   padding: 1rem;
   display: inline-block;
 }
 
-.content {
+h1 {
+  font-size: 8vw;
+  margin: 0px;
+}
+
+
+
+.main-content {
   padding: 1rem;
+  background-image:url("/static/DustBowl.a7a3491c.jpg");
+  background-size:cover;
+  height:100vh;
 }

@@ -6,15 +6,15 @@ import { Link } from 'components/Router'
 export default function Blog() {
   const { posts } = useRouteData()
   return (
-    <div>
-      <h1>It's blog time.</h1>
+    <div style={{padding:"1rem"}}>
+      <h1>Policies</h1>
       <div>
         <a href="#bottom" id="top">
           Scroll to bottom!
         </a>
       </div>
       <br />
-      All Posts:
+      All Policies:
       <ul>
         {posts.map(post => (
           <li key={post.id}>

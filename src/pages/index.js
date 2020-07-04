@@ -1,7 +1,8 @@
 import React from 'react'
+import dustBowl from '../DustBowl.jpg';
 
 export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>Welcome to React-Static</h1>
+  <div class="main-content" style ={{"text-align":"center"}}> 
+    <h1>RED DIRT COLLECTIVE</h1>    
   </div>
 )
