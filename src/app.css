@@ -47,28 +47,19 @@ nav a {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 10vw;
   margin: 0px;
 }
 
-
-.main-content {
-  padding: 1rem;
-  background-image:url("/static/DustBowl.a7a3491c.jpg");
-  background-size:cover;
-  background-attachment: fixed;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.title {
+  letter-spacing: -.03em;
+  line-height:8vw;
 }
+
+
+
 
 .content {padding-top:54px;}
-
-.main-content p {
-  width:33%;
-  margin-top:600px;
-}
 
 
 .info-scroll {
@@ -97,4 +88,17 @@ h1 {
   position:absolute;
     top:96vh;
     transform:translateY(-100%) rotate(45deg);
+}
+
+
+.screenful {
+  height:100vh;
+}
+
+section {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin-top:100vh;
 }
