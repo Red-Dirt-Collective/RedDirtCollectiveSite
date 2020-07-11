@@ -1,11 +1,17 @@
 import React from 'react'
 import dustBowl from '../DustBowl.jpg';
-import depressionMasks from '../depression-masks.jpg';
+import depressionMasks from '../goggles.jpg';
 import hands from './hands.png';
+import coffee from '../coffee.jpg';
 import styled from 'styled-components';
+import illustration from '../duststorm.jpg';
+import phone from '../phone.svg';
+import policy from '../policy.svg';
+import money from '../money.svg';
+import { blue } from 'color-name';
 
 const TextScreen = styled.div`
-  margin:20vh;
+  margin:10vh;
 `;
 
 const ImageScreen  = styled.div`
@@ -20,9 +26,34 @@ const ImageScreen  = styled.div`
 `;
 
 const InfoPanel  = styled.div`
- background-image: linear-gradient(45deg, #000000 8.33%, #f5f4e1 8.33%, #f5f4e1 50%, #000000 50%, #000000 58.33%, #f5f4e1 58.33%, #f5f4e1 100%);
- background-size: 101.82px 101.82px;
+  padding: 20px;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:row;
+  flex-wrap:wrap;
 `;
+
+const TextBlock  = styled.div`
+  background: #f5f4e1;
+  width: 400px;
+  text-align:justify;
+  font-size:18px;
+  padding:8px;
+`;
+
+const PanelTitle = styled.h3``;
+
+const PanelIcon = styled.img`
+  width:80px;
+  padding-right:8px;
+`;
+
+const PanelTitleBlock = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+`;
+
 
 
 export default () => (
@@ -33,16 +64,32 @@ export default () => (
       <i class="more"></i>
     </ImageScreen>
     <TextScreen>
-      <div> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nibh, rutrum at tincidunt id, dictum vitae lorem. Mauris est ipsum, malesuada a ornare eget, tincidunt sit amet eros. Proin suscipit ullamcorper turpis, vitae auctor odio pulvinar ut. Integer vitae ipsum viverra ligula mollis vestibulum id vel ex. Praesent quis quam a felis commodo rutrum. Praesent iaculis vehicula malesuada. Maecenas viverra fringilla aliquet. Fusce mattis ante sit amet magna lacinia, a vulputate nisl rutrum. Aenean tellus dui, mollis non convallis ut,</p>
-      </div>
-      <div> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nibh, rutrum at tincidunt id, dictum vitae lorem. Mauris est ipsum, malesuada a ornare eget, tincidunt sit amet eros. Proin suscipit ullamcorper turpis, vitae auctor odio pulvinar ut. Integer vitae ipsum viverra ligula mollis vestibulum id vel ex. Praesent quis quam a felis commodo rutrum. Praesent iaculis vehicula malesuada. Maecenas viverra fringilla aliquet. Fusce mattis ante sit amet magna lacinia, a vulputate nisl rutrum. Aenean tellus dui, mollis non convallis ut,</p>
-      </div>
+      <InfoPanel> 
+      <TextBlock><PanelTitleBlock>
+          <PanelIcon src={phone}>
+          </PanelIcon>
+          <PanelTitle>Cooperatives</PanelTitle>
+        </PanelTitleBlock>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nibh, rutrum at tincidunt id, dictum vitae lorem. Mauris est ipsum, malesuada a ornare eget, tincidunt sit amet eros. Proin suscipit ullamcorper turpis, vitae auctor odio pulvinar ut. Integer vitae ipsum viverra ligula mollis vestibulum id vel ex. Praesent quis quam a felis commodo rutrum. Praesent iaculis vehicula malesuada. Maecenas viverra fringilla aliquet. Fusce mattis ante sit amet magna lacinia, a vulputate nisl rutrum. Aenean tellus dui, mollis non convallis ut,
+      </TextBlock>
+      <TextBlock>
+        <PanelTitleBlock>
+          <PanelIcon src={policy}>
+          </PanelIcon>
+          <PanelTitle>Policy Papers/Analysis</PanelTitle>
+        </PanelTitleBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nibh, rutrum at tincidunt id, dictum vitae lorem. Mauris est ipsum, malesuada a ornare eget, tincidunt sit amet eros. Proin suscipit ullamcorper turpis, vitae auctor odio pulvinar ut. Integer vitae ipsum viverra ligula mollis vestibulum id vel ex. Praesent quis quam a felis commodo rutrum. Praesent iaculis vehicula malesuada. Maecenas viverra fringilla aliquet. Fusce mattis ante sit amet magna lacinia, a vulputate nisl rutrum. Aenean tellus dui, mollis non convallis ut,
+      </TextBlock>
+      <TextBlock><PanelTitleBlock>
+          <PanelIcon src={money}>
+          </PanelIcon>
+          <PanelTitle>Mutual Aid</PanelTitle>
+        </PanelTitleBlock>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nibh, rutrum at tincidunt id, dictum vitae lorem. Mauris est ipsum, malesuada a ornare eget, tincidunt sit amet eros. Proin suscipit ullamcorper turpis, vitae auctor odio pulvinar ut. Integer vitae ipsum viverra ligula mollis vestibulum id vel ex. Praesent quis quam a felis commodo rutrum. Praesent iaculis vehicula malesuada. Maecenas viverra fringilla aliquet. Fusce mattis ante sit amet magna lacinia, a vulputate nisl rutrum. Aenean tellus dui, mollis non convallis ut,</TextBlock>
+      </InfoPanel>
     </TextScreen>
-    <ImageScreen img={depressionMasks}>
-      
+    <ImageScreen img={illustration}>
+
     </ImageScreen>
+     
   </div>
  
 )
