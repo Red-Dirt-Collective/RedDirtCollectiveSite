@@ -60,7 +60,7 @@ export default () => (
   <div> 
     <ImageScreen img={dustBowl}>
       <h1 class="title">RED DIRT COLLECTIVE</h1>  
-      <h3 style= {{"margin-top":"200px","color":"#f5f4e1", "font-size":"20px"}}> Helping eachother through our crisis.</h3> 
+      <h3 style= {{"margin-top":"200px","color":"#f5f4e1", "font-size":"20px"}}> Helping each other through our crisis.</h3> 
       <i class="more"></i>
     </ImageScreen>
     <TextScreen>
