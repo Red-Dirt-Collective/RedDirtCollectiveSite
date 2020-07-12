@@ -1,3 +1,7 @@
-# React-Static - Basic Template
+# Red Dirt Collective
 
-To use this template, run `react-static create` and use the `basic` template.
+### Get started
+
+1. `npm i` to install dependencies.
+2. `npm run start` to build & serve.
+3. Visit `http://localhost:3000`.

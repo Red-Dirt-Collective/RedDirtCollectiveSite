@@ -57,14 +57,14 @@ const PanelTitleBlock = styled.div`
 
 
 export default () => (
-  <div>
+  <div> 
     <ImageScreen img={dustBowl}>
-      <h1 class="title">RED DIRT COLLECTIVE</h1>
-      <h3 style= {{"margin-top":"200px","color":"#f5f4e1", "font-size":"20px"}}> Helping each other through our crisis.</h3>
+      <h1 class="title">RED DIRT COLLECTIVE</h1>  
+      <h3 style= {{"margin-top":"200px","color":"#f5f4e1", "font-size":"20px"}}> Helping each other through our crisis.</h3> 
       <i class="more"></i>
     </ImageScreen>
     <TextScreen>
-      <InfoPanel>
+      <InfoPanel> 
       <TextBlock><PanelTitleBlock>
           <PanelIcon src={phone}>
           </PanelIcon>
@@ -89,7 +89,7 @@ export default () => (
     <ImageScreen img={illustration}>
 
     </ImageScreen>
-
+     
   </div>
-
+ 
 )
