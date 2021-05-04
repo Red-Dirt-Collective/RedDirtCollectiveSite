@@ -4,7 +4,7 @@
 
 @import url("https://use.typekit.net/tei3yvm.css");
 
-/* 
+/*
 body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -100,4 +100,8 @@ section {
   align-items:center;
   height:100vh;
   margin-top:100vh;
+}
+
+.snapAlignStart {
+  scroll-snap-align: start;
 }
