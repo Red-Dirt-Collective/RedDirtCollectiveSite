@@ -8,8 +8,12 @@ import aid from '../aid.svg';
 
 const ScrollSnap = styled.div`
   height: 1280px;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+
+  @media (min-width: 600px) {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-padding: 80px;
+  }
 `;
 
 const TextScreen = styled.div``;
