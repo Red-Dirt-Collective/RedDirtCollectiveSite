@@ -1,14 +1,10 @@
 import React from 'react'
 import dustBowl from '../DustBowl.jpg';
-import depressionMasks from '../goggles.jpg';
-import hands from './hands.png';
-import coffee from '../coffee.jpg';
 import styled from 'styled-components';
 import illustration from '../duststorm.jpg';
 import democracy from '../democracy.svg';
 import policy from '../policy.svg';
 import aid from '../aid.svg';
-import { blue } from 'color-name';
 
 const ScrollSnap = styled.div`
   height: 1280px;
