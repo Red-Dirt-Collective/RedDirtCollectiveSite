@@ -84,7 +84,7 @@ export default () => (
           </PanelIcon>
           <PanelTitle>Writing Policy & Analysis</PanelTitle>
         </PanelTitleBlock>
-          It's one thing to know what our problems are. It's more difficult to invent a solution, and it's harder still to translate that solution into real governance. We write and analyze policies to direct our city towards actions that will help the poor and the working class, translating their will into city ordinances, funds, capital projects, budgets and other tangible policy.
+          It's one thing to know what our problems are. It's more difficult to invent a solution, and it's harder still to translate that solution into real governance. That's why our Policy branch prioritizes a deep understanding of Norman, Oklahoma. We write and analyze policies to direct our city towards actions that will help the poor and the working class, translating their will into city ordinances, funds, capital projects, budgets and other tangible policy.
       </TextBlock>
       <TextBlock><PanelTitleBlock>
           <PanelIcon src={aid}>
