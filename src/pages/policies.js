@@ -7,8 +7,30 @@ import rightToCounsel from '../../public/policies/thumbnails/right-to-counsel.pn
 //
 import { Link } from 'components/Router'
 
+const H1 = styled.div`
+  font-size: 72px;
+  font-weight: bold;
+`;
+
+const Description = styled.div`
+  margin: 20px;
+  font-size: 20px;
+  max-width: 950px;
+
+  @media (max-width: 600px) {
+    padding: 0 20px;
+  }
+`;
+
+const P = styled.p``;
+
 const Gallery = styled.div`
   display: flex;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 20px;
+  }
 `;
 
 const Card = styled.div`
@@ -20,6 +42,9 @@ const Card = styled.div`
   padding: 0px;
   color: white;
   line-height: 36px;
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Image = styled.img`
@@ -52,7 +77,15 @@ export default function Blog() {
 
   return (
     <div style={{padding:"1rem"}}>
-      <h1>Policies</h1>
+      <H1>Policies</H1>
+      <Description>
+        <P>
+          It's one thing to know what our problems are. It's more difficult to invent a solution, and it's harder still to translate that solution into real governance.
+        </P>
+        <P>
+          That's why our Policy branch prioritizes a deep understanding of Norman, Oklahoma. We write and analyze policies to direct our city towards actions that will help the poor and the working class, translating their will into city ordinances, funds, capital projects, budgets and other tangible policy.
+        </P>
+      </Description>
       <Gallery>
         {cardData}
       </Gallery>
