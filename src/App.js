@@ -1,6 +1,7 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 import { Link, Router } from 'components/Router';
+import './styles/antd.less';
 
 
 import './app.css'
