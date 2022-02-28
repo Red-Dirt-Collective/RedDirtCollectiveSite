@@ -15,8 +15,8 @@ function App() {
         <Link to="/">Home</Link>
         {/* <Link to="/about">About</Link> */}
         <Link to="/policies">Policies</Link>
-        <Link to="/garden">Garden</Link>
-        <Link to="/aid">Mutual Aid</Link>
+        {/* <Link to="/garden">Garden</Link>
+        <Link to="/aid">Mutual Aid</Link> */}
       </nav>
       <div className="content">
 
