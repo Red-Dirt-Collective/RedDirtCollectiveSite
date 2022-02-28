@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import universalBroadband from '../../public/policies/thumbnails/universal-broadband.png';
 import livingWage from '../../public/policies/thumbnails/living-wage-for-a-working-council.png';
 import rightToCounsel from '../../public/policies/thumbnails/right-to-counsel.png';
+import normanCrew from '../../public/policies/thumbnails/crew.png';
 //
 import { Link } from 'components/Router'
 
@@ -42,12 +43,15 @@ const Card = styled.div`
   padding: 0px;
   color: white;
   line-height: 36px;
+  cursor:pointer;
   @media (max-width: 600px) {
     margin-bottom: 20px;
   }
 `;
 
 const Image = styled.img`
+width:300px;
+height:400px;
 `;
 
 const Caption = styled.div`
@@ -63,15 +67,18 @@ const CaptionText = styled.div`
 export default function Blog() {
   // const { posts } = useRouteData()
   const cardData = [
+    {caption: '', img: normanCrew, href:'https://static1.squarespace.com/static/5f7bd00f0ee4cd0865f57850/t/60bad737d2ec0402128476ea/1622857534030/CREW.pdf'},
     {caption: 'Coming Soon', img: universalBroadband},
     {caption: 'Coming Soon', img: livingWage},
     {caption: 'Coming Soon', img: rightToCounsel},
   ].map((data) => (
     <Card>
-      <Image src={data.img}></Image>
-      <Caption>
+      <a href={data.href} >
+      <Image  src={data.img}></Image>
+      </a>
+      {data.caption ? (<Caption>
         <CaptionText>{data.caption}</CaptionText>
-      </Caption>
+      </Caption>) : ''}
     </Card>
   ));
 

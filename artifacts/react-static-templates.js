@@ -5,8 +5,9 @@
 export default {
   '__react_static_root__/src/pages/404.js': require('__react_static_root__/src/pages/404.js').default,
 '__react_static_root__/src/pages/about.js': require('__react_static_root__/src/pages/about.js').default,
+'__react_static_root__/src/pages/aid.js': require('__react_static_root__/src/pages/aid.js').default,
+'__react_static_root__/src/pages/garden.js': require('__react_static_root__/src/pages/garden.js').default,
 '__react_static_root__/src/pages/index.js': require('__react_static_root__/src/pages/index.js').default,
-'__react_static_root__/src/pages/members.js': require('__react_static_root__/src/pages/members.js').default,
 '__react_static_root__/src/pages/onboard.js': require('__react_static_root__/src/pages/onboard.js').default,
 '__react_static_root__/src/pages/policies.js': require('__react_static_root__/src/pages/policies.js').default,
 '__react_static_root__/src/containers/Post': require('__react_static_root__/src/containers/Post').default
