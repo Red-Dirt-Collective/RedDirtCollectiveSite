@@ -23,6 +23,14 @@ export default {
   },
   plugins: [
     [
+      'react-static-plugin-less',
+      {
+        includePaths: ["..."],
+        sourceMap: true,
+        javascriptEnabled: true
+      }
+    ],
+    [
       require.resolve('react-static-plugin-source-filesystem'),
       {
         location: path.resolve('./src/pages'),
