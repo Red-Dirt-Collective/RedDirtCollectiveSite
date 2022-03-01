@@ -12,7 +12,7 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <Root>
-      <nav>
+      <nav style={{zIndex:1000}}>
         <Link to="/">Home</Link>
         {/* <Link to="/about">About</Link> */}
         <Link to="/policies">Policies</Link>
