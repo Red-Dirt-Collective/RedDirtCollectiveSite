@@ -1,23 +1,19 @@
 import path from 'path'
-import axios from 'axios'
+import ical from 'node-ical'
+
 
 export default {
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
-    )
+
+    const calendar = await ical.async.fromURL('https://calendar.google.com/calendar/ical/rdc.normanok%40gmail.com/public/basic.ics');
 
     return [
       {
-        path: '/policies',
-        getData: () => ({
-          posts,
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          template: 'src/containers/Post',
-          getData: () => ({post}),
-        })),
+        path: '/calendar',
+        template: 'src/pages/calendar.js',
+        getData: async (resolved) => { 
+          console.log({calendar,resolved})
+          return {calendar} }
       },
     ]
   },
