@@ -16,6 +16,8 @@
     "d3-dag": "^0.6.3",
     "d3-hierarchy": "^2.0.0",
     "d3-shape": "^2.1.0",
+    "moment": "^2.29.1",
+    "node-ical": "^0.14.1",
     "react": "^16.9.0",
     "react-d3-tree": "^2.0.1",
     "react-dom": "^16.9.0",
