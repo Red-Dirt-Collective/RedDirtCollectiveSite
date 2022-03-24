@@ -11,7 +11,6 @@ const ScrollSnap = styled.div`
 
   @media (min-width: 600px) {
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     scroll-padding: 80px;
   }
 `;
@@ -65,9 +64,9 @@ const PanelTitleBlock = styled.div`
 export default () => (
   <ScrollSnap>
     <ImageScreen className="snapAlignStart" img={dustBowl}>
-      <h1 class="title">RED DIRT COLLECTIVE</h1>
+      <h1 className="title">RED DIRT COLLECTIVE</h1>
       <h3 style= {{"marginTop":"200px","color":"#f5f4e1", "fontSize":"20px"}}> Helping each other through our crisis.</h3>
-      <i class="more"></i>
+      <i className="more"></i>
     </ImageScreen>
     <TextScreen className="snapAlignStart">
       <InfoPanel>
