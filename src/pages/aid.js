@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default () => (
-  <div>
-    <p>AID</p>
-  </div>
-)
+export default () => {
+
+  return (<div>
+  <p>AID</p>
+</div>)
+}
+  
+
