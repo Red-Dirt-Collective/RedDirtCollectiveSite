@@ -59,33 +59,60 @@ const PanelTitleBlock = styled.div`
   justify-content:flex-start;
 `;
 
+const LinksContainer = styled.div`
+  max-width: 100%;
+  min-width: 
+`;
 
+const LinkBoxStyle = {
+  backgroundColor: "#fef7f5",
+  padding: "20px 60px",
+  margin: "20px",
+  display: "block",
+  textAlign: "center",
+};
+
+const LinkBox = ({ link, label }) => (
+  <a href={link} style={LinkBoxStyle} target="_blank">
+    {label}
+  </a>
+);
 
 export default () => (
   <ScrollSnap>
     <ImageScreen className="snapAlignStart" img={dustBowl}>
       <h1 className="title">RED DIRT COLLECTIVE</h1>
-      <h3 style= {{"marginTop":"200px","color":"#f5f4e1", "fontSize":"20px"}}> Helping each other through our crisis.</h3>
+      <h3 style={{ "marginTop": "200px", "color": "#f5f4e1", "fontSize": "20px" }}> Helping each other through our crisis.</h3>
+      <LinksContainer>
+        <LinkBox label="Volunteer Form" link="https://docs.google.com/forms/d/e/1FAIpQLSdETHnFQuf-eHB2JypXvUeWvkzsOI7dfJTj3Bu0oniVQCd3FA/viewform" />
+        <LinkBox label="Patreon" link="https://www.patreon.com/RedDirtCollective" />
+        <LinkBox label="Amazon Wishlist" link="https://www.amazon.com/hz/wishlist/ls/1O6B5ZGQTKJ58" />
+        <LinkBox label="Facebook @reddirtcollective" link="https://www.facebook.com/groups/3356412661075562/" />
+        <LinkBox label="Community Garden Facebook" link="https://www.facebook.com/groups/254421259372249/" />
+        <LinkBox label="Venmo @RedDirtCollective" link="https://account.venmo.com/u/reddirtcollective" />
+        <LinkBox label="Pantry Venmo @RDC_PantryFund" link="https://account.venmo.com/u/rdc_pantryfund" />
+        <LinkBox label="PayPal" link="https://www.paypal.com/mep/dashboard" />
+      </LinksContainer>
       <i className="more"></i>
     </ImageScreen>
     <TextScreen className="snapAlignStart">
       <InfoPanel>
-      <TextBlock><PanelTitleBlock>
+        <TextBlock><PanelTitleBlock>
           <PanelIcon src={democracy}>
           </PanelIcon>
           <PanelTitle>Incubating Democratic Institutions</PanelTitle>
         </PanelTitleBlock>
-        In truly free society, we all must have some control over the institutions that affect our lives -- whether that's where we work, where we live, where we learn, or where we gather. Institutions like cooperatives, land trusts, tenants' unions, labor unions, neighborhood associations, and PREC's will return control of our lives back to us. One of our principal goals is to create, nurture and connect emancipatory systems of self-governance.
-      </TextBlock>
-      <TextBlock>
-        <PanelTitleBlock>
-          <PanelIcon src={policy}>
-          </PanelIcon>
-          <PanelTitle>Writing Policy & Analysis</PanelTitle>
-        </PanelTitleBlock>
+          In truly free society, we all must have some control over the institutions that affect our lives -- whether that's where we work, where we live, where we learn, or where we gather. Institutions like cooperatives, land trusts, tenants' unions, labor unions, neighborhood associations, and PREC's will return control of our lives back to us. One of our principal goals is to create, nurture and connect emancipatory systems of self-governance.
+        </TextBlock>
+        <TextBlock>
+          <PanelTitleBlock>
+            <PanelIcon src={policy}>
+            </PanelIcon>
+            <PanelTitle>Writing Policy & Analysis</PanelTitle>
+          </PanelTitleBlock>
           It's one thing to know what our problems are. It's more difficult to invent a solution, and it's harder still to translate that solution into real governance. That's why our Policy branch prioritizes a deep understanding of Norman, Oklahoma. We write and analyze policies to direct our city towards actions that will help the poor and the working class, translating their will into city ordinances, funds, capital projects, budgets and other tangible policy.
-      </TextBlock>
-      <TextBlock><PanelTitleBlock>
+        </TextBlock>
+        <TextBlock><PanelTitleBlock>
           <PanelIcon src={aid}>
           </PanelIcon>
           <PanelTitle>Cultivating Mutual Aid</PanelTitle>
