@@ -5,6 +5,12 @@ import illustration from '../duststorm.jpg';
 import democracy from '../democracy.svg';
 import policy from '../policy.svg';
 import aid from '../aid.svg';
+import icon_az from "../fa-icons/amazon-brands.svg"
+import icon_fb from "../fa-icons/facebook-square-brands.svg"
+import icon_dollar from "../fa-icons/hand-holding-dollar-solid.svg"
+import icon_patreon from "../fa-icons/patreon-brands.svg"
+import icon_paypal from "../fa-icons/paypal-brands.svg"
+import icon_form from "../fa-icons/wpforms-brands.svg"
 
 const ScrollSnap = styled.div`
   height: 1280px;
@@ -22,7 +28,7 @@ const ImageScreen = styled.div`
   background-image:url("${props => props.img}");
   background-size:cover;
   background-attachment: fixed;
-  height:100vh;
+  min-height:100vh;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -70,10 +76,13 @@ const LinkBoxStyle = {
   margin: "20px",
   display: "block",
   textAlign: "center",
+  boxShadow: "0 6px 16px 0 rgba(0, 0, 0, 0.8)",
 };
 
-const LinkBox = ({ link, label }) => (
+const LinkBox = ({ link, label,icon }) => (
   <a href={link} style={LinkBoxStyle} target="_blank">
+    <img src={icon} style={{ height: "20px" }} />
+    &nbsp;
     {label}
   </a>
 );
@@ -82,16 +91,16 @@ export default () => (
   <ScrollSnap>
     <ImageScreen className="snapAlignStart" img={dustBowl}>
       <h1 className="title">RED DIRT COLLECTIVE</h1>
-      <h3 style={{ "marginTop": "200px", "color": "#f5f4e1", "fontSize": "20px" }}> Helping each other through our crisis.</h3>
+      <h3 style={{ "margin": "50px 0", "color": "#f5f4e1", "fontSize": "20px" }}> Helping each other through our crisis.</h3>
       <LinksContainer>
-        <LinkBox label="Volunteer Form" link="https://docs.google.com/forms/d/e/1FAIpQLSdETHnFQuf-eHB2JypXvUeWvkzsOI7dfJTj3Bu0oniVQCd3FA/viewform" />
-        <LinkBox label="Patreon" link="https://www.patreon.com/RedDirtCollective" />
-        <LinkBox label="Amazon Wishlist" link="https://www.amazon.com/hz/wishlist/ls/1O6B5ZGQTKJ58" />
-        <LinkBox label="Facebook @reddirtcollective" link="https://www.facebook.com/groups/3356412661075562/" />
-        <LinkBox label="Community Garden Facebook" link="https://www.facebook.com/groups/254421259372249/" />
-        <LinkBox label="Venmo @RedDirtCollective" link="https://account.venmo.com/u/reddirtcollective" />
-        <LinkBox label="Pantry Venmo @RDC_PantryFund" link="https://account.venmo.com/u/rdc_pantryfund" />
-        <LinkBox label="PayPal" link="https://www.paypal.com/mep/dashboard" />
+        <LinkBox label="Volunteer Form" icon={icon_form} link="https://docs.google.com/forms/d/e/1FAIpQLSdETHnFQuf-eHB2JypXvUeWvkzsOI7dfJTj3Bu0oniVQCd3FA/viewform" />
+        <LinkBox label="Patreon" icon={icon_patreon} link="https://www.patreon.com/RedDirtCollective" />
+        <LinkBox label="Amazon Wishlist" icon={icon_az} link="https://www.amazon.com/hz/wishlist/ls/1O6B5ZGQTKJ58" />
+        <LinkBox label="Facebook @reddirtcollective" icon={icon_fb} link="https://www.facebook.com/groups/3356412661075562/" />
+        <LinkBox label="Community Garden Facebook" icon={icon_fb} link="https://www.facebook.com/groups/254421259372249/" />
+        <LinkBox label="Venmo @RedDirtCollective" icon={icon_dollar} link="https://account.venmo.com/u/reddirtcollective" />
+        <LinkBox label="Pantry Venmo @RDC_PantryFund" icon={icon_dollar} link="https://account.venmo.com/u/rdc_pantryfund" />
+        <LinkBox label="PayPal" icon={icon_paypal} link="https://www.paypal.com/mep/dashboard" />
       </LinksContainer>
       <i className="more"></i>
     </ImageScreen>
