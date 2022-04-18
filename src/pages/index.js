@@ -100,7 +100,7 @@ export default () => (
         <LinkBox label="Community Garden Facebook" icon={icon_fb} link="https://www.facebook.com/groups/254421259372249/" />
         <LinkBox label="Venmo @RedDirtCollective" icon={icon_dollar} link="https://account.venmo.com/u/reddirtcollective" />
         <LinkBox label="Pantry Venmo @RDC_PantryFund" icon={icon_dollar} link="https://account.venmo.com/u/rdc_pantryfund" />
-        <LinkBox label="PayPal" icon={icon_paypal} link="https://www.paypal.com/mep/dashboard" />
+        <LinkBox label="PayPal" icon={icon_paypal} link="https://www.paypal.com/paypalme/RedDirtCollective" />
       </LinksContainer>
       <i className="more"></i>
     </ImageScreen>
