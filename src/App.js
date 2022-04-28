@@ -50,7 +50,7 @@ function App() {
                   {renderMenu(location.pathname, hideMobileMenu, {mode: 'vertical'})}
                 </div>
               </>
-            })
+            }
           </>
         );
     }}
