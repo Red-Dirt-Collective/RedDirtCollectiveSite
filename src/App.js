@@ -20,6 +20,7 @@ const renderMenu = (path, onLinkClicked, options) => {
       {/* <Menu.Item key='/about'><Link onClick={onLinkClicked} to="/about">About</Link></Menu.Item> */}
       <Menu.Item key='/policies'><Link onClick={onLinkClicked} to="/policies">Policies</Link></Menu.Item>
       <Menu.Item key='/calendar'><Link onClick={onLinkClicked} to="/calendar">Calendar</Link></Menu.Item>
+      {/* <Menu.Item key='/directors'><Link onClick={onLinkClicked} to="/directors">Directors</Link></Menu.Item> */}
       {/* <Menu.Item key='/garden'><Link onClick={onLinkClicked} to="/about">About</Link></Menu.Item>
       <Menu.Item key='/aid'><Link onClick={onLinkClicked} to="/aid">Mutual Aid</Link></Menu.Item> */}
     </Menu>
