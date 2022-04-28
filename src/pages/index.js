@@ -91,7 +91,7 @@ export default () => (
   <ScrollSnap>
     <ImageScreen className="snapAlignStart" img={dustBowl}>
       <h1 className="title">RED DIRT COLLECTIVE</h1>
-      <h3 style={{ "margin": "50px 0", "color": "#f5f4e1", "fontSize": "20px" }}> Helping each other through our crisis.</h3>
+      <h3 style={{ "margin": "50px 0", "color": "#f5f4e1", "fontSize": "20px" }}>A movement of the poor and working people of Norman.</h3>
       <LinksContainer>
         <LinkBox label="Volunteer Form" icon={icon_form} link="https://docs.google.com/forms/d/e/1FAIpQLSdETHnFQuf-eHB2JypXvUeWvkzsOI7dfJTj3Bu0oniVQCd3FA/viewform" />
         <LinkBox label="Patreon" icon={icon_patreon} link="https://www.patreon.com/RedDirtCollective" />
