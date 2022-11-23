@@ -10,7 +10,7 @@ export default () => {
   return (
     <>
       <h2>Event Calendar</h2>
-      <img src='/calendar_05_may.jpg' alt="calendar" />
+      <img src='/calendar_11_november.png' alt="calendar" />
     </>
   );
 }
